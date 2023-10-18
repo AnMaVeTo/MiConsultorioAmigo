@@ -40,7 +40,7 @@
 
 .nuestra_clinica{
     height: 600px;
-    background-image: url(Imagenes/Medicina2.jpg);
+    background-image: url(../assets/Medicina2.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -83,7 +83,7 @@
 
 .convenios{
     height: 650px;
-    background-image: url(Imagenes/Medicina2.jpg);
+    background-image: url(../assets/Medicina2.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
