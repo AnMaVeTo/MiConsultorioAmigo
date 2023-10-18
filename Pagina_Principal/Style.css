@@ -1,169 +1,162 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; /*Aplicar bien el padding en algunos lugares*/
-    text-decoration: none; /*Quitar las lineas de los enlaces*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*Aplicar bien el padding en algunos lugares*/
+  text-decoration: none; /*Quitar las lineas de los enlaces*/
+  font-family: sans-serif;
 }
 
-.principal{
-    height: 125px;
-    display: flex;
+.principal {
+  height: 125px;
+  display: flex;
 }
 
-.menu{
-    height: 50px    ;
+.menu {
+  height: 50px;
 }
 
-.header{
-    height: 300px;
+.header {
+  height: 300px;
 }
 
-.logo{
-    height: 50px;
-    width: 25px;
+.logo {
+  height: 50px;
+  width: 25px;
 }
 
-.telefono{
-    height: 50px;
-    width: 25px;
+.telefono {
+  height: 50px;
+  width: 25px;
 }
 
-.ubicacion{
-    height: 50px;
-    width: 25px;;
+.ubicacion {
+  height: 50px;
+  width: 25px;
 }
 
-.contenedor{
-    max-width: 500px;
-    margin: 0 auto;
+.nuestra_clinica {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../assets/Medicina2.jpg);
+  height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.nuestra_clinica{
-    height: 600px;
-    background-image: url(../assets/Medicina2.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
+.contenedor {
+  font-size: 50px;
+  margin: 0 auto;
 }
 
-.general{
-    height: 40px;
-    width: 40px;
-    background-color: white;
+.servicios-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
 }
 
-.dermatologia{
-    height: 40px;
-    width: 40px;
-    background-color: white;
+.servicios-container div {
+  background-color: white;
+  height: 150px;
+  width: 200px;
+  box-sizing: border-box;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.ginecologia_obstetricia{
-    height: 40px;
-    width: 40px;
-    background-color: white;
+.objetivo {
+  height: 600px;
 }
 
-.medicina_interna{
-    height: 40px;
-    width: 40px;
-    background-color: white;
+.convenios {
+  height: 650px;
+  background-image: url(../assets/Medicina2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
 }
 
-.neumologia{
-    height: 40px;
-    width: 40px;
-    background-color: white;
+.convenio1 {
+  position: relative;
+  height: 150px;
+  width: 100px;
 }
 
-.objetivo{
-    height: 600px;
+.convenio2 {
+  position: relative;
+  height: 150px;
+  width: 100px;
 }
 
-.convenios{
-    height: 650px;
-    background-image: url(../assets/Medicina2.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
+.convenio3 {
+  position: relative;
+  height: 150px;
+  width: 100px;
 }
 
-.convenio1{
-    position: relative;
-    height: 150px;
-    width: 100px;
+.convenio4 {
+  position: relative;
+  height: 150px;
+  width: 100px;
 }
 
-.convenio2{
-    position: relative;
-    height: 150px;
-    width: 100px;
+.servicio_farmaceutico {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
-.convenio3{
-    position: relative;
-    height: 150px;
-    width: 100px;
+.consejeria_medica {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
-.convenio4{
-    position: relative;
-    height: 150px;
-    width: 100px;
+.Hospitalizacion_casa {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
-.servicio_farmaceutico{
-    object-fit: cover;
-    width:100%;
-    height:100%;
+.odontologia {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
-.consejeria_medica{
-    object-fit: cover;
-    width:100%;
-    height:100%;
+.personal {
+  height: 600px;
 }
 
-.Hospitalizacion_casa{
-    object-fit: cover;
-    width:100%;
-    height:100%;
+.noticias {
+  height: 600px;
 }
 
-.odontologia{
-    object-fit: cover;
-    width:100%;
-    height:100%;
+.pie_pagina {
+  width: 100%;
+  height: 250px;
+  margin: 0 auto;
+  background-color: #5fd1b8;
 }
 
-.personal{
-    height: 600px;
+.facebook {
+  height: 40px;
+  width: 40px;
 }
 
-.noticias{
-    height: 600px;
+.instagram {
+  height: 40px;
+  width: 40px;
 }
 
-.pie_pagina{
-    width: 100%;
-    height: 250px;
-    margin: 0 auto;
-    background-color: #5FD1B8;
-}
-
-.facebook{
-    height: 40px;
-    width: 40px;
-}
-
-.instagram{
-    height: 40px;
-    width: 40px;
-}
-
-.whatsapp{
-    height: 40px;
-    width: 40px;
+.whatsapp {
+  height: 40px;
+  width: 40px;
 }
