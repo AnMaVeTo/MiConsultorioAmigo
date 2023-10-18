@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*Aplicar bien el padding en algunos lugares*/
+    text-decoration: none; /*Quitar las lineas de los enlaces*/
+}
+
+.principal{
+    height: 125px;
+    display: flex;
+}
+
+.menu{
+    height: 50px    ;
+}
+
+.header{
+    height: 300px;
+}
+
+.logo{
+    height: 50px;
+    width: 25px;
+}
+
+.telefono{
+    height: 50px;
+    width: 25px;
+}
+
+.ubicacion{
+    height: 50px;
+    width: 25px;;
+}
+
+.contenedor{
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.nuestra_clinica{
+    height: 600px;
+    background-image: url(Imagenes/Medicina2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+.general{
+    height: 40px;
+    width: 40px;
+    background-color: white;
+}
+
+.dermatologia{
+    height: 40px;
+    width: 40px;
+    background-color: white;
+}
+
+.ginecologia_obstetricia{
+    height: 40px;
+    width: 40px;
+    background-color: white;
+}
+
+.medicina_interna{
+    height: 40px;
+    width: 40px;
+    background-color: white;
+}
+
+.neumologia{
+    height: 40px;
+    width: 40px;
+    background-color: white;
+}
+
+.objetivo{
+    height: 600px;
+}
+
+.convenios{
+    height: 650px;
+    background-image: url(Imagenes/Medicina2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+.convenio1{
+    position: relative;
+    height: 150px;
+    width: 100px;
+}
+
+.convenio2{
+    position: relative;
+    height: 150px;
+    width: 100px;
+}
+
+.convenio3{
+    position: relative;
+    height: 150px;
+    width: 100px;
+}
+
+.convenio4{
+    position: relative;
+    height: 150px;
+    width: 100px;
+}
+
+.servicio_farmaceutico{
+    object-fit: cover;
+    width:100%;
+    height:100%;
+}
+
+.consejeria_medica{
+    object-fit: cover;
+    width:100%;
+    height:100%;
+}
+
+.Hospitalizacion_casa{
+    object-fit: cover;
+    width:100%;
+    height:100%;
+}
+
+.odontologia{
+    object-fit: cover;
+    width:100%;
+    height:100%;
+}
+
+.personal{
+    height: 600px;
+}
+
+.noticias{
+    height: 600px;
+}
+
+.pie_pagina{
+    width: 100%;
+    height: 250px;
+    margin: 0 auto;
+    background-color: #5FD1B8;
+}
+
+.facebook{
+    height: 40px;
+    width: 40px;
+}
+
+.instagram{
+    height: 40px;
+    width: 40px;
+}
+
+.whatsapp{
+    height: 40px;
+    width: 40px;
+}
