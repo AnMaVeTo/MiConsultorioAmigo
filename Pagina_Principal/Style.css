@@ -1,6 +1,6 @@
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box; /*Aplicar bien el padding en algunos lugares*/
   text-decoration: none; /*Quitar las lineas de los enlaces*/
   font-family: sans-serif;
@@ -9,10 +9,21 @@
 .principal {
   height: 125px;
   display: flex;
+  box-sizing: border-box;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .menu {
+  background-color: #cacaca;
   height: 50px;
+  box-sizing: border-box;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .header {
@@ -68,6 +79,20 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.servicios {
+  width: 100%;
+  margin: 20px;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
+  transition: all 400ms ease;
+}
+
+.servicios:hover {
+  box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.4);
+  transform: translateY(3%);
 }
 
 .objetivo {
