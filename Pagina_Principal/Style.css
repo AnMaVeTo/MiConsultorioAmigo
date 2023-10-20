@@ -17,13 +17,67 @@
 }
 
 .menu {
-  background-color: #cacaca;
+  background-color: #ffffff;
   height: 50px;
   box-sizing: border-box;
   padding: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.titulo1 {
+  cursor: default;
+  color: #ffffff;
+  justify-content: center;
+  display: flex;
+}
+
+.titulo2 {
+  justify-content: center;
+  color: #ffffff;
+  display: flex;
+}
+
+.nuestro-objetivo {
+  align-items: center;
+  display: flex;
+}
+
+.acerca-nosotros {
+  height: 300px;
+  width: 150px;
+  display: flex;
+  background-color: blue;
+}
+
+.doctores {
+  height: 300px;
+  width: 150px;
+  display: flex;
+  background-color: green;
+}
+
+.titulo4 {
+  justify-content: center;
+  color: #ffffff;
+  display: flex;
+}
+
+.titulo5 {
+  justify-content: center;
+  color: #ffffff;
+  display: flex;
+}
+
+.titulo-oscuro {
+  color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.subtitle {
+  color: #ffffff;
 }
 
 .header {
@@ -72,16 +126,24 @@
 
 .servicios-container div {
   background-color: white;
-  height: 150px;
+  height: 170px;
   width: 200px;
   box-sizing: border-box;
-  padding: 10px;
+  padding: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+}
+
+.servicios-container div p {
+  text-align: center;
+  font-size: 20px;
 }
 
 .servicios {
+  align-items: center;
+  justify-content: center;
   width: 100%;
   margin: 20px;
   border-radius: 2.5px;
@@ -96,6 +158,72 @@
 
 .objetivo {
   height: 600px;
+}
+
+.nuestro-objetivo {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.acerca-nosotros {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 75%;
+}
+
+.acerca-nosotros div {
+  background-color: white;
+  height: 150px;
+  width: 200px;
+  box-sizing: border-box;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.hospital-edificio {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.doctores {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 75%;
+}
+
+.doctores div {
+  background-color: #e3dac9;
+  height: 150px;
+  width: 200px;
+  box-sizing: border-box;
+  padding: 10px;
+  display: flex;
+  align-items: center;
 }
 
 .convenios {
@@ -157,6 +285,7 @@
 
 .personal {
   height: 600px;
+  background-color: #e3dac9;
 }
 
 .noticias {
