@@ -11,7 +11,18 @@
   display: flex;
   box-sizing: border-box;
   padding: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-principal {
   display: flex;
+  width: 100%;
+  height: 75px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 0 auto;
   align-items: center;
   justify-content: center;
 }
@@ -36,11 +47,6 @@
 .titulo2 {
   justify-content: center;
   color: #ffffff;
-  display: flex;
-}
-
-.nuestro-objetivo {
-  align-items: center;
   display: flex;
 }
 
@@ -82,11 +88,6 @@
 
 .header {
   height: 300px;
-}
-
-.logo {
-  height: 50px;
-  width: 25px;
 }
 
 .telefono {
@@ -141,6 +142,11 @@
   font-size: 20px;
 }
 
+.serviccios,
+p {
+  color: #16879e;
+}
+
 .servicios {
   align-items: center;
   justify-content: center;
@@ -161,59 +167,45 @@
 }
 
 .nuestro-objetivo {
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
+  height: 600px;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
-}
-
-.acerca-nosotros {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 75%;
+  box-sizing: border-box;
+  padding: 30px;
+  gap: 20px;
+  justify-content: center;
 }
 
 .acerca-nosotros div {
-  background-color: white;
-  height: 150px;
-  width: 200px;
+  background-color: black;
+  height: 50px;
+  width: 50px;
   box-sizing: border-box;
   padding: 10px;
   display: flex;
   align-items: center;
 }
 
-.hospital-edificio {
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
+.hospital-edificio div {
+  height: 100px;
+  width: 100px;
+}
+
+.clase {
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.acerca-nosotros {
+  display: flex;
   flex-direction: column;
 }
 
 .doctores {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 75%;
+  flex-direction: column;
 }
 
 .doctores div {
@@ -233,6 +225,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
 .convenio1 {
@@ -294,9 +290,13 @@
 
 .pie_pagina {
   width: 100%;
-  height: 250px;
+  height: 150px;
   margin: 0 auto;
   background-color: #5fd1b8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
 .facebook {
@@ -312,4 +312,8 @@
 .whatsapp {
   height: 40px;
   width: 40px;
+}
+
+.copyright {
+  margin-top: 20px;
 }
