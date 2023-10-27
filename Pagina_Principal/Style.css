@@ -6,35 +6,41 @@
   font-family: sans-serif;
 }
 
-.principal {
-  height: 125px;
+.menu-principal {
+  margin: 15px;
+  width: auto;
   display: flex;
-  box-sizing: border-box;
-  padding: 10px;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+  flex-direction: row;
 }
 
-.menu-principal {
+.ubicacion,
+.telefono {
   display: flex;
-  width: 100%;
-  height: 75px;
-  background-color: #ffffff;
-  box-sizing: border-box;
-  padding: 10px;
-  margin: 0 auto;
   align-items: center;
-  justify-content: center;
+}
+
+.consultorio-amigo {
+  display: flex;
+  align-items: center;
 }
 
 .menu {
-  background-color: #ffffff;
-  height: 50px;
-  box-sizing: border-box;
-  padding: 5px;
+  height: 35px;
   display: flex;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 10px;
+  flex-direction: row;
+}
+
+.menu a {
+  padding: 60px;
+  justify-content: space-between;
 }
 
 .titulo1 {
@@ -88,16 +94,6 @@
 
 .header {
   height: 300px;
-}
-
-.telefono {
-  height: 50px;
-  width: 25px;
-}
-
-.ubicacion {
-  height: 50px;
-  width: 25px;
 }
 
 .nuestra_clinica {
@@ -173,7 +169,7 @@ p {
   box-sizing: border-box;
   padding: 30px;
   gap: 20px;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .acerca-nosotros div {
@@ -218,7 +214,7 @@ p {
   align-items: center;
 }
 
-.convenios {
+.convenios-container {
   height: 650px;
   background-image: url(../assets/Principal/Medicina2.jpg);
   background-position: center;
@@ -231,57 +227,36 @@ p {
   gap: 20px;
 }
 
-.convenio1 {
-  position: relative;
-  height: 150px;
-  width: 100px;
-}
-
-.convenio2 {
-  position: relative;
-  height: 150px;
-  width: 100px;
-}
-
-.convenio3 {
-  position: relative;
-  height: 150px;
-  width: 100px;
-}
-
-.convenio4 {
-  position: relative;
+.convenio {
+  display: flex;
   height: 150px;
   width: 100px;
 }
 
 .servicio_farmaceutico {
   object-fit: cover;
-  width: 100%;
-  height: 100%;
 }
 
 .consejeria_medica {
   object-fit: cover;
-  width: 100%;
-  height: 100%;
 }
 
 .Hospitalizacion_casa {
   object-fit: cover;
-  width: 100%;
-  height: 100%;
 }
 
 .odontologia {
   object-fit: cover;
-  width: 100%;
-  height: 100%;
 }
 
 .personal {
-  height: 600px;
+  height: 500px;
   background-color: #e3dac9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
 .noticias {
