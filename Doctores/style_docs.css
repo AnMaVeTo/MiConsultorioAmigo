@@ -6,54 +6,32 @@
   font-family: sans-serif;
 }
 
-.principal {
-  height: 125px;
-  display: flex;
-  box-sizing: border-box;
-  padding: 10px;
-  align-items: center;
-  justify-content: center;
-}
-
 .menu-principal {
+  margin: 15px;
+  width: auto;
   display: flex;
-  width: 100%;
-  height: auto;
-  background-color: #ffffff;
-  box-sizing: border-box;
-  padding: 10px;
-  margin: 0 auto;
   align-items: center;
   justify-content: space-around;
+  flex-direction: row;
+  text-decoration: none;
 }
 
+.ubicacion,
 .telefono {
-  height: 50px;
-  width: 25px;
-}
-
-.ubicacion {
-  height: 50px;
-  width: 25px;
-}
-
-.menu {
-  background-color: #ffffff;
-  height: 50px;
-  box-sizing: border-box;
-  padding: 5px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  gap: 10px;
 }
 
-.doctores-conteiner {
-  height: auto;
+.consultorio-amigo {
+  display: flex;
+  align-items: center;
+  gap: 7.5px;
 }
 
-.img {
-  height: 265px;
-  width: 225px;
+a {
+  color: #000000;
+  text-decoration: none;
 }
 
 .pie_pagina {
@@ -80,6 +58,10 @@
 .whatsapp {
   height: 40px;
   width: 40px;
+}
+
+.conteiner-copyright {
+  width: 100%;
 }
 
 .copyright {
