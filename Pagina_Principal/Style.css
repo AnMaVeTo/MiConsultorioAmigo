@@ -1,9 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;1,700&display=swap");
+
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box; /*Aplicar bien el padding en algunos lugares*/
   text-decoration: none; /*Quitar las lineas de los enlaces*/
   font-family: sans-serif;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Amaranth", sans-serif;
+  font-weight: 700;
+}
+
+h1 {
+  font-family: "Amaranth", sans-serif;
+  font-size: 50px;
+}
+
+p {
+  font-family: "Amaranth", sans-serif;
+  font-weight: 400;
+}
+
+a {
+  font-family: "Amaranth", sans-serif;
+  font-weight: 400;
 }
 
 .menu-principal {
@@ -153,10 +179,18 @@ p {
   overflow: hidden;
   box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
   transition: all 400ms ease;
+  -webkit-transition: all 400ms ease;
+  -moz-transition: all 400ms ease;
+  -ms-transition: all 400ms ease;
+  -o-transition: all 400ms ease;
 }
 .servicios:hover {
   box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.4);
   transform: translateY(3%);
+  -webkit-transform: translateY(3%);
+  -moz-transform: translateY(3%);
+  -ms-transform: translateY(3%);
+  -o-transform: translateY(3%);
 }
 
 .objetivo {
@@ -193,6 +227,21 @@ p {
   width: 100%;
   justify-content: space-around;
   align-items: center;
+}
+
+.clase p {
+  color: #5fd1b8;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #5fd1b8;
+  border-radius: 4px;
+  text-align: center;
+  transition: all 400ms ease;
+}
+
+.clase p:hover {
+  background-color: #5fd1b8;
+  color: #ffffff;
 }
 
 .acerca-nosotros {
@@ -283,10 +332,12 @@ p {
 .carrusel {
   width: 100%;
   display: flex;
+  justify-content: center;
 }
+
 .carrusel a {
   display: flex;
-  gap: 15px;
+  gap: 25px;
   align-items: center;
   justify-content: center;
 }
@@ -294,10 +345,17 @@ p {
 .noticias-container {
   height: 600px;
   width: 100%;
-  display: flex;
   justify-content: center;
   align-items: center;
   font-family: sans-serif;
+}
+
+.titulo-noticias {
+  padding-top: 15px;
+}
+
+.noticias-items {
+  display: flex;
 }
 
 .noticia {
