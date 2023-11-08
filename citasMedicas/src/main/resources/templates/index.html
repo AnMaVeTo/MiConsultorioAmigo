@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Resultados de la búsqueda</title>
+</head>
+<body>
+<h1>Resultados de la búsqueda</h1>
+
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <!-- Otros encabezados si es necesario -->
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="person : ${people}">
+        <td th:text="${person.id}"></td>
+        <td th:text="${person.name}"></td>
+        <!-- Otras columnas de datos si es necesario -->
+    </tr>
+    </tbody>
+</table>
+
+<a href="/search">Volver a la búsqueda</a>
+</body>
+</html>
