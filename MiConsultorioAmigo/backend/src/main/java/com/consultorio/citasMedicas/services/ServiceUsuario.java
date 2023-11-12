@@ -40,6 +40,7 @@ public class ServiceUsuario implements IUsuarioService {
             updatedUsuario.setRol(usuario.getRol());
             updatedUsuario.setUsername(usuario.getUsername());
             updatedUsuario.setPassword(usuario.getPassword());
+            updatedUsuario.setIdMedico(usuario.getIdMedico());
 
             repositoryUsuario.save(updatedUsuario);
             return true;

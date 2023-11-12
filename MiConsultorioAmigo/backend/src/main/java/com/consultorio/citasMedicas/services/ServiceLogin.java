@@ -1,7 +1,6 @@
 package com.consultorio.citasMedicas.services;
 
 import com.consultorio.citasMedicas.interfaceService.ILoginService;
-import com.consultorio.citasMedicas.model.Rol;
 import com.consultorio.citasMedicas.model.Usuario;
 import com.consultorio.citasMedicas.repository.RepositoryUsuario;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,18 +16,18 @@ public class ServiceLogin implements ILoginService {
 
     @Override
     public Usuario loginUser(String username, String password) {
-        // Buscar al usuario por nombre de usuario
         Usuario usuario = repositoryUsuario.findByUsername(username);
 
-        if (usuario != null) {
-            // Verificar si la contraseña proporcionada coincide con la contraseña almacenada
-            if (usuario.getPassword().equals(password)) {
-                System.out.println("valido");
-                return usuario;
-            }
+        if (usuario != null && usuario.getPassword().equals(password)) {
+            // Las credenciales son correctas
+            System.out.println("Usuario válido");
+            return usuario;
+        } else {
+            // Las credenciales son incorrectas
+            System.out.println("Credenciales incorrectas");
+            return null;
         }
-
-        return usuario; // Credenciales incorrectas
     }
+
 
 }

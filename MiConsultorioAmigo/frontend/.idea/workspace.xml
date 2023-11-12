@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d54d9697-ad44-43fe-8305-083ad8da6d49" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../MER.mwb" beforeDir="false" afterPath="$PROJECT_DIR$/../../MER.mwb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/citasMedicas/controller/ControllerMedico.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/citasMedicas/controller/ControllerMedico.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/citasMedicas/controller/ControllerUsuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/citasMedicas/controller/ControllerUsuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/citasMedicas/model/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/citasMedicas/model/Usuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/citasMedicas/services/ServiceLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/citasMedicas/services/ServiceLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/citasMedicas/services/ServiceUsuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/com/consultorio/citasMedicas/services/ServiceUsuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/medico/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/medico/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/medico/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/medico/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/secretaria/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/secretaria/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/secretaria/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/secretaria/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trabajadores/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trabajadores/.idea/Trabajadores.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trabajadores/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trabajadores/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trabajadores/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trabajadores/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trabajadores/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trabajadores/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trabajadores/backend/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trabajadores/backend/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trabajadores/backend/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trabajadores/backend/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trabajadores/backend/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trabajadores/backend/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trabajadores/backend/src/main/java/com/consultorio/citasMedicas/CitasMedicasApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trabajadores/backend/src/main/java/com/consultorio/citasMedicas/CorsConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trabajadores/backend/src/main/java/com/consultorio/citasMedicas/controller/Auth.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trabajadores/backend/src/main/java/com/consultorio/citasMedicas/controller/ControllerCita.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trabajadores/backend/src/main/java/com/consultorio/citasMedicas/controller/ControllerEspecialidad.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trabajadores/backend/src/main/java/com/consultorio/citasMedicas/controller/ControllerMedico.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trabajadores/backend/src/main/java/com/consultorio/citasMedicas/controller/ControllerPaciente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trabajadores/backend/src/main/java/com/consultorio/citasMedicas/controller/ControllerRol.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trabajadores/backend/src/main/java/com/consultorio/citasMedicas/controller/ControllerUsuario.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trabajadores/backend/src/main/java/com/consultorio/citasMedicas/interfaceService/ICitaServices.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trabajadores/backend/src/main/java/com/consultorio/citasMedicas/interfaceService/IEspecialidadService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trabajadores/backend/src/main/java/com/consultorio/citasMedicas/interfaceService/ILoginService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trabajadores/backend/src/main/java/com/consultorio/citasMedicas/interfaceService/IMedicoService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trabajadores/backend/src/main/java/com/consultorio/citasMedicas/interfaceService/IPacienteService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trabajadores/backend/src/main/java/com/consultorio/citasMedicas/interfaceService/IRolService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trabajadores/backend/src/main/java/com/consultorio/citasMedicas/interfaceService/IUsuarioService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trabajadores/backend/src/main/java/com/consultorio/citasMedicas/model/Cita.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trabajadores/backend/src/main/java/com/consultorio/citasMedicas/model/Especialidad.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trabajadores/backend/src/main/java/com/consultorio/citasMedicas/model/Medico.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trabajadores/backend/src/main/java/com/consultorio/citasMedicas/model/Paciente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trabajadores/backend/src/main/java/com/consultorio/citasMedicas/model/Rol.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trabajadores/backend/src/main/java/com/consultorio/citasMedicas/model/Usuario.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trabajadores/backend/src/main/java/com/consultorio/citasMedicas/repository/RepositoryCita.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trabajadores/backend/src/main/java/com/consultorio/citasMedicas/repository/RepositoryEspecialidad.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trabajadores/backend/src/main/java/com/consultorio/citasMedicas/repository/RepositoryMedico.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trabajadores/backend/src/main/java/com/consultorio/citasMedicas/repository/RepositoryPaciente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trabajadores/backend/src/main/java/com/consultorio/citasMedicas/repository/RepositoryRol.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trabajadores/backend/src/main/java/com/consultorio/citasMedicas/repository/RepositoryUsuario.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trabajadores/backend/src/main/java/com/consultorio/citasMedicas/services/ServiceCita.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trabajadores/backend/src/main/java/com/consultorio/citasMedicas/services/ServiceEspecialidad.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trabajadores/backend/src/main/java/com/consultorio/citasMedicas/services/ServiceLogin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trabajadores/backend/src/main/java/com/consultorio/citasMedicas/services/ServiceMedico.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trabajadores/backend/src/main/java/com/consultorio/citasMedicas/services/ServicePaciente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trabajadores/backend/src/main/java/com/consultorio/citasMedicas/services/ServiceRol.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trabajadores/backend/src/main/java/com/consultorio/citasMedicas/services/ServiceUsuario.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trabajadores/backend/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trabajadores/backend/src/test/java/com/consultorio/citasMedicas/CitasMedicasApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trabajadores/citasMedicas/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trabajadores/citasMedicas/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trabajadores/citasMedicas/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trabajadores/citasMedicas/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trabajadores/citasMedicas/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trabajadores/citasMedicas/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trabajadores/citasMedicas/src/main/java/com/consultorio/citasMedicas/CitasMedicasApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trabajadores/citasMedicas/src/main/java/com/consultorio/citasMedicas/controller/AppConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trabajadores/citasMedicas/src/main/java/com/consultorio/citasMedicas/controller/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trabajadores/citasMedicas/src/main/java/com/consultorio/citasMedicas/interfaceService/IUserServices.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trabajadores/citasMedicas/src/main/java/com/consultorio/citasMedicas/model/Rol.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trabajadores/citasMedicas/src/main/java/com/consultorio/citasMedicas/model/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trabajadores/citasMedicas/src/main/java/com/consultorio/citasMedicas/repository/RepositoryUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trabajadores/citasMedicas/src/main/java/com/consultorio/citasMedicas/services/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trabajadores/citasMedicas/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trabajadores/citasMedicas/src/main/resources/templates/config.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trabajadores/citasMedicas/src/main/resources/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trabajadores/citasMedicas/src/main/resources/templates/search.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trabajadores/citasMedicas/src/test/java/com/consultorio/citasMedicas/CitasMedicasApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trabajadores/citasMedicas/src/test/java/com/consultorio/citasMedicas/controller/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trabajadores/frontend/admin/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trabajadores/frontend/admin/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trabajadores/frontend/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trabajadores/frontend/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trabajadores/frontend/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trabajadores/frontend/medico/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trabajadores/frontend/medico/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trabajadores/frontend/secretaria/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trabajadores/frontend/secretaria/index.html" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="2Y5WuSYDwepEvb1mcMzYZSo7w60" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/anmat/OneDrive/Documentos/MiConsultorioAmigo/miconsultorioamigo/frontend",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d54d9697-ad44-43fe-8305-083ad8da6d49" name="Changes" comment="" />
+      <created>1699816142901</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1699816142901</updated>
+      <workItem from="1699816143906" duration="36000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

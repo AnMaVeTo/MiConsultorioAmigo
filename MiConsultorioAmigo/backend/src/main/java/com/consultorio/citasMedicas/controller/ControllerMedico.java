@@ -33,6 +33,7 @@ public class ControllerMedico {
     @PostMapping("/crear")
     public int crearMedico(@RequestBody Medico medico) {
         int newMedico = iMedicoService.saveMedico(medico);
+        System.out.println("creado doctor");
         return newMedico;
     }
 

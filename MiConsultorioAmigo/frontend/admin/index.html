@@ -6,234 +6,1079 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     />
+    <link rel="stylesheet" href="../index.css" />
   </head>
   <body>
-    <h1>Panel de Administrador</h1>
-    <ul class="nav nav-tabs" id="myTabs">
-      <li class="nav-item">
-        <a
-          class="nav-link active"
-          id="users-tab"
-          data-toggle="tab"
-          href="#users"
-          >Usuarios</a
-        >
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="doctors-tab" data-toggle="tab" href="#doctors"
-          >Médicos</a
-        >
-      </li>
-      <li class="nav-item">
-        <a
-          class="nav-link"
-          id="appointments-tab"
-          data-toggle="tab"
-          href="#appointments"
-          >Citas</a
-        >
-      </li>
-      <li class="nav-item">
-        <a
-          class="nav-link"
-          id="pacientes-tab"
-          data-toggle="tab"
-          href="#pacientes"
-          >Pacientes</a
-        >
-      </li>
-    </ul>
-    <div class="tab-content" id="myTabsContent">
-      <div class="tab-pane fade show active" id="users">
-        <table class="table">
-          <thead>
-            <tr>
-              <th>Id</th>
-              <th>Nombre</th>
-              <th>Rol</th>
-              <th>Acciones</th>
-            </tr>
-          </thead>
-          <tbody id="user-table-body"></tbody>
-        </table>
-        <div id="edit-user-form" style="display: none">
-          <h2>Editar Usuario</h2>
-          <form id="user-edit-form">
-            <input type="text" id="edit-user-name" placeholder="Nombre" />
-            <input type="text" id="edit-user-email" placeholder="Correo" />
-            <select id="edit-user-role"></select>
-            <button type="submit">Guardar Cambios</button>
-          </form>
-        </div>
-      </div>
-      <div class="tab-pane fade" id="doctors">
-        <table class="table">
-          <thead>
-            <tr>
-              <th>Id</th>
-              <th>Nombre</th>
-              <th>Email</th>
-              <th>Consultorio</th>
-              <th>Especialidad</th>
-              <th>Celular</th>
-              <th>Acciones</th>
-            </tr>
-          </thead>
-          <tbody id="doctor-table-body"></tbody>
-        </table>
-        <div id="edit-doctor-form" style="display: none">
-          <h2>Editar Médico</h2>
-          <form id="doctor-edit-form">
-            <input type="text" id="edit-doctor-name" placeholder="Nombre" />
-            <input type="text" id="edit-doctor-email" placeholder="Email" />
-            <input
-              type="text"
-              id="edit-doctor-consultorio"
-              placeholder="Consultorio"
-            />
-            <input
-              type="text"
-              id="edit-doctor-especialidad"
-              placeholder="Especialidad"
-            />
-            <input type="text" id="edit-doctor-celular" placeholder="Celular" />
-            <button type="submit">Guardar Cambios</button>
-          </form>
-        </div>
-      </div>
-      <div class="tab-pane fade" id="appointments">
-        <table class="table">
-          <thead>
-            <tr>
-              <th>Id</th>
-              <th>Id Medico</th>
-              <th>Id Paciente</th>
-              <th>Motivo</th>
-              <th>Fecha</th>
-              <th>Estado</th>
-              <th>Duracion</th>
-              <th>Comentario</th>
-              <th>Acciones</th>
-            </tr>
-          </thead>
-          <tbody id="appointment-table-body"></tbody>
-        </table>
-        <div id="edit-appointment-form" style="display: none">
-          <h2>Editar Cita</h2>
-          <form id="appointment-edit-form">
-            <input
-              type="text"
-              id="edit-appointment-comments"
-              placeholder="Comentarios"
-            />
-            <input
-              type="text"
-              id="edit-appointment-duracion"
-              placeholder="Duración"
-            />
-            <input
-              type="text"
-              id="edit-appointment-estado"
-              placeholder="Estado"
-            />
-            <input
-              type="text"
-              id="edit-appointment-fecha-hora"
-              placeholder="Fecha y Hora"
-            />
-            <input
-              type="text"
-              id="edit-appointment-id-medico"
-              placeholder="ID Médico"
-            />
-            <input
-              type="text"
-              id="edit-appointment-id-paciente"
-              placeholder="ID Paciente"
-            />
-            <input
-              type="text"
-              id="edit-appointment-motivo"
-              placeholder="Motivo"
-            />
-            <button type="submit">Guardar Cambios</button>
-          </form>
-        </div>
-      </div>
-
-      <div class="tab-pane fade" id="pacientes">
-        <table class="table">
-          <thead>
-            <tr>
-              <th>Id</th>
-              <th>Nombre</th>
-              <th>Apellido</th>
-              <th>Genero</th>
-              <th>Celular</th>
-              <th>Direccion</th>
-              <th>Email</th>
-              <th>Fecha nacimiento</th>
-              <th>Historia Clinica</th>
-              <th>Medicamentos</th>
-              <th>Acciones</th>
-            </tr>
-          </thead>
-          <tbody id="pacientes-table-body"></tbody>
-        </table>
-        <div id="edit-pacientes-form" style="display: none">
-          <h2>Editar Paciente</h2>
-          <form id="pacientes-edit-form">
-            <input
-              type="text"
-              id="edit-pacientes-nombre"
-              placeholder="Nombre"
-            />
-            <input
-              type="text"
-              id="edit-pacientes-apellido"
-              placeholder="Apellido"
-            />
-            <input
-              type="text"
-              id="edit-pacientes-genero"
-              placeholder="Genero"
-            />
-            <input
-              type="text"
-              id="edit-pacientes-celular"
-              placeholder="Celular"
-            />
-            <input
-              type="text"
-              id="edit-pacientes-direccion"
-              placeholder="Direccion"
-            />
-            <input
-              type="text"
-              id="edit-pacientes-fechaNacimiento"
-              placeholder="Fecha nacimiento"
-            />
-            <input
-              type="text"
-              id="edit-pacientes-historiaClinica"
-              placeholder="Historia Clinica"
-            />
-            <input
-              type="text"
-              id="edit-pacientes-medicamentos"
-              placeholder="Medicamentos"
-            />
-          </form>
-
-          <button class="btn btn-primary update-pacientes" data-id="1">
-            Actualizar Paciente
+    <section class="menu">
+      <h4>Panel de Administrador</h4>
+      <ul class="nav flex-column" id="myTabs">
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            id="users-tab"
+            data-toggle="tab"
+            href="#users"
+            >Usuarios</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="doctors-tab" data-toggle="tab" href="#doctors"
+            >Médicos</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="citas-tab" data-toggle="tab" href="#citas"
+            >Citas</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            id="pacientes-tab"
+            data-toggle="tab"
+            href="#pacientes"
+            >Pacientes</a
+          >
+        </li>
+        <li class="nav-item">
+          <button
+            class="nav-link active btn btn-danger"
+            id="logout-tab"
+            data-toggle="tab"
+          >
+            Cerrar Sesión
           </button>
+        </li>
+      </ul>
+    </section>
+
+    <section class="principal">
+      <div class="tab-content" id="myTabsContent">
+        <!-- Usuarios -->
+
+        <div class="tab-pane fade show active" id="users">
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              box-sizing: border-box;
+              padding: 10px;
+            "
+          >
+            <h2>Usuarios</h2>
+            <button
+              class="btn btn-success add-btn"
+              id="create-user"
+              data-toggle="modal"
+              data-target="#crearUsuario"
+            >
+              Crear Usuario
+            </button>
+          </div>
+
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Id</th>
+                <th>Nombre</th>
+                <th>Rol</th>
+                <th>Acciones</th>
+              </tr>
+            </thead>
+            <tbody id="user-table-body"></tbody>
+          </table>
+
+          <div
+            class="modal fade"
+            id="editarUsuario"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">
+                    Editar Medico
+                  </h1>
+                  <button
+                    type="button"
+                    class="close"
+                    aria-label="Close"
+                    data-dismiss="modal"
+                    style="color: red; font-size: 30px"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div id="edit-user-form" style="display: none">
+                    <form id="user-edit-form">
+                      <div class="form-group">
+                        <label for="edit-user-name">Nombre</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="edit-user-name"
+                          placeholder="Nombre"
+                        />
+                      </div>
+
+                      <div class="form-group">
+                        <label for="edit-user-password">Contraseña</label>
+                        <input
+                          type="password"
+                          class="form-control"
+                          id="edit-user-password"
+                          placeholder="Contraseña"
+                        />
+                      </div>
+
+                      <div class="form-group">
+                        <label for="edit-user-role">Rol</label>
+                        <select class="form-control" id="edit-user-role">
+                          <option value="" selected>Seleccionar un rol</option>
+                          <!-- Agrega opciones para roles aquí -->
+                        </select>
+                      </div>
+
+                      <div
+                        class="form-group"
+                        style="display: none"
+                        id="editMedicoSelectContainer"
+                      >
+                        <label for="edit-user-medico">Médico</label>
+                        <select class="form-control" id="edit-user-medico">
+                          <option value="" selected>
+                            Seleccionar un médico
+                          </option>
+                          <!-- Agrega opciones para médicos aquí -->
+                        </select>
+                      </div>
+
+                      <button type="submit" class="btn btn-primary">
+                        Guardar Cambios
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="modal fade"
+            id="crearUsuario"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">
+                    Crear Usuario
+                  </h1>
+                  <button
+                    type="button"
+                    class="close"
+                    aria-label="Close"
+                    data-dismiss="modal"
+                    style="color: red; font-size: 30px"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div id="create-user-form" style="display: none">
+                    <form id="user-create-form">
+                      <div class="form-group">
+                        <label for="create-user-name">Nombre</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="create-user-name"
+                          placeholder="Nombre"
+                        />
+                      </div>
+
+                      <div class="form-group">
+                        <label for="create-user-password">Contraseña</label>
+                        <input
+                          type="password"
+                          class="form-control"
+                          id="create-user-password"
+                          placeholder="Contraseña"
+                        />
+                      </div>
+
+                      <div class="form-group">
+                        <label for="create-user-role">Rol</label>
+                        <select class="form-control" id="create-user-role">
+                          <option value="" selected>Seleccionar un rol</option>
+                          <!-- Agrega opciones para roles aquí -->
+                        </select>
+                      </div>
+
+                      <div
+                        class="form-group"
+                        style="display: none"
+                        id="medicoSelectContainer"
+                      >
+                        <label for="create-user-medico">Médico</label>
+                        <select class="form-control" id="create-user-medico">
+                          <option value="" selected>
+                            Seleccionar un médico
+                          </option>
+                          <!-- Agrega opciones para médicos aquí -->
+                        </select>
+                      </div>
+
+                      <button type="submit" class="btn btn-primary">
+                        Guardar Cambios
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Medicos -->
+        <div class="tab-pane fade" id="doctors">
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              box-sizing: border-box;
+              padding: 10px;
+            "
+          >
+            <h2>Medicos</h2>
+            <button
+              class="btn btn-success add-btn"
+              id="create-medico"
+              data-toggle="modal"
+              data-target="#crearMedico"
+            >
+              Crear medico
+            </button>
+          </div>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Id</th>
+                <th>Nombre</th>
+                <th>Email</th>
+                <th>Consultorio</th>
+                <th>Especialidad</th>
+                <th>Celular</th>
+                <th>Acciones</th>
+              </tr>
+            </thead>
+            <tbody id="doctor-table-body"></tbody>
+          </table>
+          <div
+            class="modal fade"
+            id="editarMedico"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">
+                    Editar Medico
+                  </h1>
+                  <button
+                    type="button"
+                    class="close"
+                    aria-label="Close"
+                    data-dismiss="modal"
+                    style="color: red; font-size: 30px"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div id="edit-doctor-form" style="display: none">
+                    <form id="doctor-edit-form">
+                      <div class="form-group">
+                        <label for="edit-doctor-name">Nombre</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="edit-doctor-name"
+                          placeholder="Nombre"
+                        />
+                      </div>
+
+                      <div class="form-group">
+                        <label for="edit-doctor-email">Email</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="edit-doctor-email"
+                          placeholder="Email"
+                        />
+                      </div>
+
+                      <div class="form-group">
+                        <label for="edit-doctor-consultorio">Consultorio</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="edit-doctor-consultorio"
+                          placeholder="Consultorio"
+                        />
+                      </div>
+
+                      <div class="form-group">
+                        <label for="edit-doctor-especialidad"
+                          >Especialidad</label
+                        >
+                        <select
+                          class="form-control"
+                          name="especialidad"
+                          id="edit-doctor-especialidad"
+                        >
+                          <option value="" selected>
+                            Seleccionar una especialidad
+                          </option>
+                          <!-- Agrega opciones para especialidades aquí -->
+                        </select>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="edit-doctor-celular">Celular</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="edit-doctor-celular"
+                          placeholder="Celular"
+                        />
+                      </div>
+
+                      <button type="submit" class="btn btn-primary">
+                        Guardar Cambios
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="modal fade"
+            id="crearMedico"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">
+                    Crear Medico
+                  </h1>
+                  <button
+                    type="button"
+                    class="close"
+                    aria-label="Close"
+                    data-dismiss="modal"
+                    style="color: red; font-size: 30px"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div id="create-doctor-form" style="display: none">
+                    <form id="doctor-create-form">
+                      <div class="form-group">
+                        <label for="create-doctor-name">Nombre</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="create-doctor-name"
+                          placeholder="Nombre"
+                        />
+                      </div>
+
+                      <div class="form-group">
+                        <label for="create-doctor-email">Email</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="create-doctor-email"
+                          placeholder="Email"
+                        />
+                      </div>
+
+                      <div class="form-group">
+                        <label for="create-doctor-consultorio"
+                          >Consultorio</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="create-doctor-consultorio"
+                          placeholder="Consultorio"
+                        />
+                      </div>
+
+                      <div class="form-group">
+                        <label for="create-doctor-especialidad"
+                          >Especialidad</label
+                        >
+                        <select
+                          class="form-control"
+                          name="especialidad"
+                          id="create-doctor-especialidad"
+                        >
+                          <option value="" selected>
+                            Seleccionar una especialidad
+                          </option>
+                          <!-- Agrega opciones para especialidades aquí -->
+                        </select>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="create-doctor-celular">Celular</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="create-doctor-celular"
+                          placeholder="Celular"
+                        />
+                      </div>
+
+                      <button type="submit" class="btn btn-primary">
+                        Guardar Cambios
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Citas -->
+        <div class="tab-pane fade" id="citas">
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              box-sizing: border-box;
+              padding: 10px;
+            "
+          >
+            <h2>Citas</h2>
+            <button
+              class="btn btn-success add-btn"
+              data-toggle="modal"
+              data-target="#crearCita"
+              id="create-citas"
+            >
+              Crear Citas
+            </button>
+          </div>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Id</th>
+                <th>Estado</th>
+                <th>Fecha</th>
+                <th>Medico</th>
+                <th>Paciente</th>
+                <th>Duración</th>
+                <th>Comentarios</th>
+                <th>Motivo</th>
+                <th>Acciones</th>
+              </tr>
+            </thead>
+            <tbody id="citas-table-body"></tbody>
+          </table>
+          <div
+            class="modal fade"
+            id="editarCita"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">
+                    Editar Cita
+                  </h1>
+                  <button
+                    type="button"
+                    class="close"
+                    aria-label="Close"
+                    data-dismiss="modal"
+                    style="color: red; font-size: 30px"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div id="edit-citas-form" style="display: none">
+                    <form id="citas-edit-form">
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label for="edit-citas-estado">Estado</label>
+                          <select
+                            class="form-control"
+                            name="estado"
+                            id="edit-citas-estado"
+                          >
+                            <option value="" selected>
+                              Seleccionar un estado
+                            </option>
+                            <option value="pendiente">Pendiente</option>
+                            <option value="cancelada">Cancelada</option>
+                            <option value="realizada">Realizada</option>
+                          </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="edit-citas-fecha">Fecha</label>
+                          <input
+                            type="datetime-local"
+                            class="form-control"
+                            id="edit-citas-fecha"
+                            placeholder="Fecha"
+                          />
+                        </div>
+                        <div class="form-group col-md-12">
+                          <label for="edit-citas-medico">Médico</label>
+                          <select
+                            class="form-control"
+                            name="medico"
+                            id="edit-citas-medico"
+                          >
+                            <option value="" selected>
+                              Seleccionar un médico
+                            </option>
+                            <!-- Agrega opciones para médicos aquí -->
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label for="edit-citas-paciente">Paciente</label>
+                          <select
+                            class="form-control"
+                            name="paciente"
+                            id="edit-citas-paciente"
+                          >
+                            <option value="" selected>
+                              Seleccionar un paciente
+                            </option>
+                            <!-- Agrega opciones para pacientes aquí -->
+                          </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="edit-citas-duracion">Duración</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="edit-citas-duracion"
+                            placeholder="Duración"
+                          />
+                        </div>
+                        <div class="form-group col-md-12">
+                          <label for="edit-citas-comentarios"
+                            >Comentarios</label
+                          >
+                          <textarea
+                            type="text"
+                            class="form-control"
+                            id="edit-citas-comentarios"
+                            placeholder="Comentarios"
+                          ></textarea>
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="edit-citas-motivo">Motivo</label>
+                        <textarea
+                          type="text"
+                          class="form-control"
+                          id="edit-citas-motivo"
+                          placeholder="Motivo"
+                        ></textarea>
+                      </div>
+
+                      <button type="submit" class="btn btn-success">
+                        Guardar
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="modal fade"
+            id="crearCita"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">
+                    Crear Cita
+                  </h1>
+                  <button
+                    type="button"
+                    class="close"
+                    aria-label="Close"
+                    data-dismiss="modal"
+                    style="color: red; font-size: 30px"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div id="create-citas-form" style="display: none">
+                    <form id="citas-create-form">
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label for="create-citas-estado">Estado</label>
+                          <select
+                            class="form-control"
+                            name="estado"
+                            id="create-citas-estado"
+                          >
+                            <option value="" selected>
+                              Seleccionar un estado
+                            </option>
+                            <option value="pendiente">Pendiente</option>
+                            <option value="cancelada">Cancelada</option>
+                            <option value="realizada">Realizada</option>
+                          </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="create-citas-fecha">Fecha</label>
+                          <input
+                            type="datetime-local"
+                            class="form-control"
+                            id="create-citas-fecha"
+                            placeholder="Fecha"
+                          />
+                        </div>
+                        <div class="form-group col-md-12">
+                          <label for="create-citas-medico">Médico</label>
+                          <select
+                            class="form-control"
+                            name="medico"
+                            id="create-citas-medico"
+                          >
+                            <option value="" selected>
+                              Seleccionar un médico
+                            </option>
+                            <!-- Agrega opciones para médicos aquí -->
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label for="create-citas-paciente">Paciente</label>
+                          <select
+                            class="form-control"
+                            name="paciente"
+                            id="create-citas-paciente"
+                          >
+                            <option value="" selected>
+                              Seleccionar un paciente
+                            </option>
+                            <!-- Agrega opciones para pacientes aquí -->
+                          </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="create-citas-duracion">Duración</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="create-citas-duracion"
+                            placeholder="Duración"
+                          />
+                        </div>
+                        <div class="form-group col-md-12">
+                          <label for="create-citas-comentarios"
+                            >Comentarios</label
+                          >
+                          <textarea
+                            type="text"
+                            class="form-control"
+                            id="create-citas-comentarios"
+                            placeholder="Comentarios"
+                          ></textarea>
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="create-citas-motivo">Motivo</label>
+                        <textarea
+                          type="text"
+                          class="form-control"
+                          id="create-citas-motivo"
+                          placeholder="Motivo"
+                        ></textarea>
+                      </div>
+
+                      <button type="submit" class="btn btn-primary">
+                        Guardar Cambios
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pacientes -->
+        <div class="tab-pane fade" id="pacientes">
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              box-sizing: border-box;
+              padding: 10px;
+            "
+          >
+            <h2>Pacientes</h2>
+            <button
+              class="btn btn-success add-btn"
+              id="create-pacientes"
+              data-toggle="modal"
+              data-target="#crearPaciente"
+            >
+              Crear paciente
+            </button>
+          </div>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Id</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Genero</th>
+                <th>Celular</th>
+                <th>Dirección</th>
+                <th>Email</th>
+                <th>Fecha Nacimiento</th>
+                <th>Historia Clinica</th>
+                <th>Medicamentos</th>
+                <th>Acciones</th>
+              </tr>
+            </thead>
+            <tbody id="pacientes-table-body"></tbody>
+          </table>
+
+          <div
+            class="modal fade"
+            id="editarPaciente"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">
+                    Editar Paciente
+                  </h1>
+                  <button
+                    type="button"
+                    class="close"
+                    aria-label="Close"
+                    data-dismiss="modal"
+                    style="color: red; font-size: 30px"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div id="edit-pacientes-form" style="display: none">
+                    <form id="pacientes-edit-form">
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label for="edit-pacientes-name">Nombre</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="edit-pacientes-name"
+                            placeholder="Nombre"
+                          />
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="edit-pacientes-apellido">Apellido</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="edit-pacientes-apellido"
+                            placeholder="Apellido"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label for="edit-pacientes-genero">Género</label>
+                          <select
+                            class="form-control"
+                            name="genero"
+                            id="edit-pacientes-genero"
+                          >
+                            <option value="" selected>
+                              Seleccionar un género
+                            </option>
+                            <option value="masculino">Masculino</option>
+                            <option value="femenino">Femenino</option>
+                          </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="edit-pacientes-email">Email</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="edit-pacientes-email"
+                            placeholder="Email"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label for="edit-pacientes-celular">Celular</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="edit-pacientes-celular"
+                            placeholder="Celular"
+                          />
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="edit-pacientes-fechaNacimiento"
+                            >Fecha de Nacimiento</label
+                          >
+                          <input
+                            type="datetime-local"
+                            class="form-control"
+                            id="edit-pacientes-fechaNacimiento"
+                            placeholder="Fecha de Nacimiento"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="edit-pacientes-direccion">Dirección</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="edit-pacientes-direccion"
+                          placeholder="Dirección"
+                        />
+                      </div>
+
+                      <div class="form-group">
+                        <label for="edit-pacientes-historiaClinica"
+                          >Historia Clínica</label
+                        >
+                        <textarea
+                          type="text"
+                          class="form-control"
+                          id="edit-pacientes-historiaClinica"
+                          placeholder="Historia Clínica"
+                        ></textarea>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="edit-pacientes-medicamentos"
+                          >Medicamentos</label
+                        >
+                        <textarea
+                          type="text"
+                          class="form-control"
+                          id="edit-pacientes-medicamentos"
+                          placeholder="Medicamentos"
+                        ></textarea>
+                      </div>
+
+                      <button type="submit" class="btn btn-primary">
+                        Guardar Cambios
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="modal fade"
+            id="crearPaciente"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">
+                    Crear Paciente
+                  </h1>
+                  <button
+                    type="button"
+                    class="close"
+                    aria-label="Close"
+                    data-dismiss="modal"
+                    style="color: red; font-size: 30px"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div id="create-pacientes-form" style="display: none">
+                    <form id="pacientes-create-form">
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label for="create-pacientes-name">Nombre</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="create-pacientes-name"
+                            placeholder="Nombre"
+                          />
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="create-pacientes-apellido"
+                            >Apellido</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="create-pacientes-apellido"
+                            placeholder="Apellido"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label for="create-pacientes-genero">Género</label>
+                          <select
+                            class="form-control"
+                            name="genero"
+                            id="create-pacientes-genero"
+                          >
+                            <option value="" selected>
+                              Seleccionar un género
+                            </option>
+                            <option value="masculino">Masculino</option>
+                            <option value="femenino">Femenino</option>
+                          </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="create-pacientes-email">Email</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="create-pacientes-email"
+                            placeholder="Email"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label for="create-pacientes-celular">Celular</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="create-pacientes-celular"
+                            placeholder="Celular"
+                          />
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="create-pacientes-fechaNacimiento"
+                            >Fecha de Nacimiento</label
+                          >
+                          <input
+                            type="datetime-local"
+                            class="form-control"
+                            id="create-pacientes-fechaNacimiento"
+                            placeholder="Fecha de Nacimiento"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="create-pacientes-direccion"
+                          >Dirección</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="create-pacientes-direccion"
+                          placeholder="Dirección"
+                        />
+                      </div>
+
+                      <div class="form-group">
+                        <label for="create-pacientes-historiaClinica"
+                          >Historia Clínica</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="create-pacientes-historiaClinica"
+                          placeholder="Historia Clínica"
+                        />
+                      </div>
+
+                      <div class="form-group">
+                        <label for="create-pacientes-medicamentos"
+                          >Medicamentos</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="create-pacientes-medicamentos"
+                          placeholder="Medicamentos"
+                        />
+                      </div>
+
+                      <button type="submit" class="btn btn-primary">
+                        Guardar
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="app.js"></script>
+    <script type="module" src="usuario.js"></script>
+    <script type="module" src="medico.js"></script>
+    <script type="module" src="citas.js"></script>
+    <script type="module" src="pacientes.js"></script>
+    <script type="module" src="app.js"></script>
   </body>
 </html>

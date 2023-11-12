@@ -10,7 +10,6 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/usuario")
-@CrossOrigin(origins = "http://localhost:5173")
 public class ControllerUsuario {
 
     @Autowired
@@ -25,6 +24,7 @@ public class ControllerUsuario {
     @PostMapping("/crear")
     public int crearUsuario(@RequestBody Usuario usuario) {
         int newUsuario = itodoService.saveUsuario(usuario);
+        System.out.println("creado usuario");
         return newUsuario;
     }
 

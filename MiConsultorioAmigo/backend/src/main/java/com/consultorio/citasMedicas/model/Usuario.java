@@ -16,15 +16,18 @@ public class Usuario {
 
     private String password;
 
+    private int idMedico;
+
 
     public Usuario() {
     }
 
-    public Usuario(int id, int rol, String username, String password) {
+    public Usuario(int id, int rol, String username, String password, int idMedico) {
         this.id = id;
         this.rol = rol;
         this.username = username;
         this.password = password;
+        this.idMedico = idMedico;
     }
 
     public int getId() {
@@ -57,5 +60,13 @@ public class Usuario {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public int getIdMedico() {
+        return idMedico;
+    }
+
+    public void setIdMedico(int idMedico) {
+        this.idMedico = idMedico;
     }
 }

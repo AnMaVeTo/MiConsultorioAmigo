@@ -23,9 +23,16 @@ loginForm.addEventListener("submit", (event) => {
       if (data.success) {
         console.log(data.usuario);
         localStorage.setItem("username", data.usuario.username);
+        localStorage.setItem("idMedico", data.usuario.idMedico);
         console.log(data);
         localStorage.setItem("rol", data.rol.nombre);
-        window.location.href = "admin/index.html";
+        if (data.rol.nombre === "Administrador") {
+          window.location.href = "/admin/index.html";
+        } else if (data.rol.nombre === "Secretaria") {
+          window.location.href = "/secretaria/index.html";
+        } else if (data.rol.nombre === "Medico") {
+          window.location.href = "/medico/index.html";
+        }
       } else {
         errorMessage.textContent = data.message;
         errorMessage.style.display = "block";

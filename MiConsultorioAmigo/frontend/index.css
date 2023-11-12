@@ -1,0 +1,56 @@
+body{
+    width: 100%;
+    display: flex;
+    background-color: #e3edff;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    box-sizing: border-box;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+a:hover{
+    color: #3d4b67;
+    background-color: white;
+}
+.menu{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #c3d8fd;
+    height: 100vh;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 10px;
+    gap: 20px;
+}
+
+h4{
+    font-weight: bold;
+    color: black;
+    padding: 10px 0px;
+}
+.principal{
+    width: 80%;
+    height: 100vh;
+    overflow: auto;
+    box-sizing: border-box;
+    padding: 20px;
+    position: relative;
+}
+
+
+
+table{
+    width: 100%;
+}
